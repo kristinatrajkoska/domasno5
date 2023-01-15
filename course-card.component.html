@@ -1,0 +1,35 @@
+<div class="course-card" *ngIf="crs" [ngClass]="Class()">
+
+    <div class="course-title">
+        {{index + ". " + crs.description}}
+    </div>
+
+    <ng-template #noImage>
+        <p>No image is available.</p>
+    </ng-template>
+
+    <img width="300" alt="Angular Logo"
+    [src] = "crs.iconUrl">
+
+    
+
+    <div class="course-description">
+        {{crs.longDescription}}
+    </div>
+
+    <div class="course-category" [ngSwitch]="crs.category">
+        <div class="category" *ngSwitchCase="'BEGINNER'">Beginner</div>
+        <div class="category" *ngSwitchCase="'INTERMEDIATE'">Intermediate</div>
+        <div class="category" *ngSwitchCase="'ADVANCED'">Advanced</div>
+        <div class="category" *ngSwitchDefault>NONE</div>
+    </div>
+
+    <div [ngSwitch]="crs.lessonsCount">
+        <div class="casovi" *ngSwitchCase="10">Number of lessons: 10</div>
+        <div class="casovi" *ngSwitchCase="11">Number of lessons: 11</div>
+        <div class="casovi" *ngSwitchCase="8">Number of lessons: 8</div>
+        <div class="casovi" *ngSwitchDefault>Unable to count</div>
+    </div>
+    
+    <button id="button" (click)="onCrsViewed()"> COURSE </button>
+</div>

@@ -1,0 +1,36 @@
+.course-card.beginner {
+    background-color: rgb(173, 216, 230);
+    border: 3px solid rgb(65, 105, 225);
+}
+
+.course-card.advanced {
+    background-color: rgb(246, 144, 226);
+    border: 3px solid rgb(217, 0, 255);
+}
+
+.course-card.intermediate {
+    background-color: rgb(173, 230, 177);
+    border: 3px solid rgb(15, 88, 32);
+}
+
+.category {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+    padding: 3px 3px;
+    display: inline;
+    font-size: 14px;
+}
+
+.casovi {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(19, 83, 23);
+}
+
+#button{
+    margin-top: 5px;
+    border: 3px solid rgb(125, 5, 158);
+    border-radius: 3%;
+    background-color: aqua;
+}
